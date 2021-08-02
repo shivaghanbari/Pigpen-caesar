@@ -16,6 +16,7 @@ def photographic_encrypy(root_txt):
     x = -350
     y = 250
     turtle.bgcolor("white")
+    turtle.speed("normal")
     for i in range(len(root_txt)):
         if root_txt[i] in colorsDict:
             char = colorsDict[root_txt[i]]
@@ -34,7 +35,7 @@ def photographic_encrypy(root_txt):
         colors.goto(x + 50, y)
         colors.goto(x, y)
         colors.end_fill()
-        x += 50
+        x = x + 50
 
     if i == len(root_txt) - 1:
         time.sleep(1)
