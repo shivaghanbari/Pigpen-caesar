@@ -1,6 +1,7 @@
 import turtle
 import time
 
+# Function for Photographic Encryption
 def photographic_encrypy(root_txt):
     colors = turtle.Turtle()
     colorsDict = {" ": "black", "a": "gray", "b": "silver", "c": "whitesmoke", "d": "rosybrown", "e": "firebrick",
@@ -41,12 +42,14 @@ def photographic_encrypy(root_txt):
         time.sleep(1)
 
         print(result_txt)
+        
 
-
+# Function for Photographic Decryption
 def photographic_dencrypt():
 
     print("Please Check The Color's Dictionary")
-
+    
+# Function for Pigpen Cipher Encryption
 def pigpen_encrypt(t):
     alphabet = {"a": chr(5287), "b": chr(8852), "c": chr(5290), "d": chr(8848),
                 "e": chr(9633), "f": chr(8847), "g": chr(5283), "h": chr(8851), "i": chr(5285),
@@ -65,14 +68,14 @@ def pigpen_encrypt(t):
 
     print(result_txt)
 
-
+# Function for Pigpen Cipher Decryption
 def pigpen_dencrypt():
     print(""" pig pen characters :
         a( ᒧ ),b( ⊔ ), c( ᒪ ), d( ⊐ ), e( □ ), f( ⊏ ), g( ᒣ ), h( ⊓ ), i( ᒥ ), j( ᒧx ), k( ⊔x ) ,l( ᒪx ), m( ⊐x ),
         n( □x ), o( ⊏x ), p( ᒣx ), q( ⊓x ), r( ᒥx ), s( ᒧo ), t( ⊔o ), u( ᒪo ), v( ⊐o ), w( □o ), x( ⊏o), y( ᒣo ),Z( ⊓o )
         """)
 
-
+# Main Program
 root_txt = input("Please write a string \n")
 choice = input("Photographic Or Pig-pen cipher Or ?\nhint : Enter name completely\n")
 if choice == "Photographic" or choice == "photographic":
