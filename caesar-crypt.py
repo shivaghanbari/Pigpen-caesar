@@ -1,3 +1,4 @@
+# Caesar Cipher Encryption Function
 def caesar_encrypt(root_txt, shift):
     result_txt = ''
     for char in root_txt:
@@ -9,7 +10,7 @@ def caesar_encrypt(root_txt, shift):
             result_txt = result_txt + chr((ord(char) + shift - 97) % 26 + 97)
     print(result_txt)
 
-
+# Caesar Cipher Decryption Function
 def caesar_dencrypt(root_txt, shift):
     result_txt = ''
     for char in root_txt:
@@ -21,7 +22,7 @@ def caesar_dencrypt(root_txt, shift):
             result_txt = result_txt + chr((ord(char) - shift - 97) % 26 + 97)
     print(result_txt)
 
-
+# Pigpen Cipher Encryption Function
 def pigpen_encrypt(t):
     alphabet = {"a": chr(5287), "b": chr(8852), "c": chr(5290), "d": chr(8848),
                 "e": chr(9633), "f": chr(8847), "g": chr(5283), "h": chr(8851), "i": chr(5285),
@@ -40,14 +41,14 @@ def pigpen_encrypt(t):
 
     print(result_txt)
 
-
+# Pigpen Cipher Decryption Function
 def pigpen_dencrypt():
     print(""" pig pen characters :
         a( ᒧ ),b( ⊔ ), c( ᒪ ), d( ⊐ ), e( □ ), f( ⊏ ), g( ᒣ ), h( ⊓ ), i( ᒥ ), j( ᒧx ), k( ⊔x ) ,l( ᒪx ), m( ⊐x ),
         n( □x ), o( ⊏x ), p( ᒣx ), q( ⊓x ), r( ᒥx ), s( ᒧo ), t( ⊔o ), u( ᒪo ), v( ⊐o ), w( □o ), x( ⊏o), y( ᒣo ),Z( ⊓o )
         """)
 
-
+# Main Program
 root_txt = input("Please write a string \n")
 choice = input("Caesar Or Pig-pen cipher ?\nhint : Enter name or first letter of it\n")
 if choice == "caesar" or choice == "c" or choice == "C":
